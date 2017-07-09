@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/event-page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <!--<link href="../css/ie10-viewport-bug-workaround.css" rel="stylesheet">-->
+    <!--<link href="../css/justified-nav.css" rel="stylesheet">-->
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row featurette">
+        <div class="col-md-7 push-md-5">
+            <h2 class="featurette-heading">Lorem ipsum</h2>
+            <h4 class="featurette-heading">Price 100 lv.</h4>
+            <div>
+                <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                <br>
+                <a href="#" class="btn btn-success">Buy ticket</a>
+                <div><a id="edit-button" href="edit-event.html" style="font-size:36px;color: blue; margin-top: 50px"><i class="fa fa-edit"></i></a></div>
+            </div>
+        </div>
+        <div class="col-md-5 pull-md-7">
+            <img id="mainImg" class="picture"
+                 src="http://www.skiheavenly.com/~/media/heavenly/images/732x260%20header%20images/events-heavenly-header.ashx"
+                 alt="Main image"/>
+            <button style="font-size:30px;color:red;"><i class="fa fa-trash-o"></i></button>
+        </div>
+    </div>
+    <hr style="margin-top: 50px">
+    <div class="row">
+        <div class="col-lg-4">
+            <img class="picture"
+                 src="http://www.skiheavenly.com/~/media/heavenly/images/732x260%20header%20images/events-heavenly-header.ashx"
+                 alt="Extra image"/>
+            <br>
+            <button style="font-size:24px;color: blue"><i class="fa fa-edit"></i></button>
+            <button style="font-size:24px;color:red;"><i class="fa fa-trash-o"></i></button>
+        </div>
+        <div class="col-lg-4">
+            <img class="picture"
+                 src="http://www.skiheavenly.com/~/media/heavenly/images/732x260%20header%20images/events-heavenly-header.ashx"
+                 alt="Extra image"/>
+            <br>
+            <button style="font-size:24px;color: blue"><i class="fa fa-edit"></i></button>
+            <button style="font-size:24px;color:red;"><i class="fa fa-trash-o"></i></button>
+        </div>
+        <div class="col-lg-4">
+            <img class="picture"
+                 src="http://www.skiheavenly.com/~/media/heavenly/images/732x260%20header%20images/events-heavenly-header.ashx"
+                 alt="Extra image"/>
+            <br>
+            <button style="font-size:24px;color: blue"><i class="fa fa-edit"></i></button>
+            <button style="font-size:24px;color:red;"><i class="fa fa-trash-o"></i></button>
+        </div>
+    </div>
+    <hr style="margin-top: 50px">
+    <div class="btn btn-group">
+        <span>Like:&nbsp;</span>
+        <button id="btn-like" class="btnGlyphicon"><i class="fa fa-thumbs-up" style="font-size:24px;color: green"></i></button>
+        <button id="btn-unlike" class="btnGlyphicon"><i class="fa fa-thumbs-down" style="font-size:24px;color: red"></i></button>
+    </div>
+    <div id="calendar">
+        Качено:&nbsp; <i class="fa fa-calendar" style="font-size:18px;color: blue; alignment: right"></i>
+        23/07/2017
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <button id="btnGlyphicon" style="color: blue">Write commend &nbsp;<i class="fa fa-comment"></i></button>
+            <form id="comment-form">
+                <textarea id="comment-text" class="form-control" rows="3"></textarea>
+                <div class="form-group row">
+                    <div class="col-md-4">
+                        <input class="btn-success" type="submit" value="Изпрати">
+                    </div>
+                </div>
+            </form>
+
+            <div class="commentData">
+                <div class="commentBox"> I like that...</div>
+                <small>Panovski 06/07/2017</small>
+            </div>
+        </div>
+
+        <div class="col-md-6 offset-4" style="position: absolute; top: 750px">
+            <div id="map-canvas"></div>
+        </div>
+    </div>
+    <div id="commentDate" style="margin-bottom: 120px">
+
+    </div>
+    <div class="row" style="margin-bottom: 120px"></div>
+
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img-wrapper">
+        <div id="caption-text"></div>
+    </div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsP-OEcnl9pVkA4uhDOh_FS2y7m92K8Us&libraries=places"
+        type="text/javascript"></script>
+<script src="../js/event.js"></script>
+</body>
+</html>

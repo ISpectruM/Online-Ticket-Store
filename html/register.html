@@ -1,0 +1,61 @@
+<head th:replace="~{fragments/head}"></head>
+<div th:replace="~{fragments/menu}"></div>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!--<link href="../css/ie10-viewport-bug-workaround.css" rel="stylesheet">-->
+    <!--<link href="../css/justified-nav.css" rel="stylesheet">-->
+</head>
+<body>
+
+<div class="container" style="margin-top: 100px">
+    <h1 class="text-center">Register</h1>
+    <br>
+    <form method="post">
+        <div class="container">
+            <div class="form-group row">
+                <label class="col-sm-2 offset-2 col-form-label">Username</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control form-control-warning"/>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-2 offset-2 col-form-label">Email</label>
+                <div class="col-sm-4">
+                    <input type="email" class="form-control form-control-warning" placeholder="username@example.com"/>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-2 offset-2 col-form-label">Password</label>
+                <div class="col-sm-4">
+                    <input type="password" class="form-control form-control-warning"/>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-2 offset-2 col-form-label">Confirm password</label>
+                <div class="col-sm-4">
+                    <input type="password" class="form-control form-control-warning"/>
+                </div>
+            </div>
+            <div class="col-sm-4 offset-4">
+                <input type="submit" class="btn btn-success" value="Register"/>
+            </div>
+        </div>
+    </form>
+
+    <form class="col-sm-4 offset-4" action="/connect/facebook" method="post">
+        <button type="submit" class="btn btn-primary" style="width: 220px; margin-top: 5px;"><i class="fa fa-facebook"></i>
+            &nbsp;Register with Facebook
+        </button>
+    </form>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</body>
+</html>
