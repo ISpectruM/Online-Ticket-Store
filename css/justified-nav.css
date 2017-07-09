@@ -2,7 +2,9 @@ body {
     padding-top: 20px;
 }
 .footerMenu {
-    margin-top: 40px;
+    margin-top: 60px;
+    align-self: center;
+    align-content: center;
 }
 .footerMenu a{
     margin-left: 10px;
@@ -87,7 +89,7 @@ body {
     /* Remove the padding we set earlier */
     .masthead1,
     .marketing,
-    .footer 1{
+    .footer1{
         padding-right: 0;
         padding-left: 0;
     }
